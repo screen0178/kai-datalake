@@ -31,4 +31,4 @@ app.get("/", (req, res) => {
   res.json({ message: "Application Start." });
 });
 // start server
-app.listen(8080, () => console.log("server is running..."));
+app.listen(process.env.PORT, () => console.log("server is running..."));
